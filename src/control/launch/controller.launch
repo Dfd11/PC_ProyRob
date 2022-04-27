@@ -1,0 +1,10 @@
+ <launch>
+   <group ns="control">
+      <node respawn="true" pkg="joy" type="joy_node" name="joy" >
+         <param name="dev" type="string" value="/dev/input/js2" />
+
+      </node>
+
+      <node pkg="control" type="control" name="control_adapt"/>
+   </group>
+</launch>
